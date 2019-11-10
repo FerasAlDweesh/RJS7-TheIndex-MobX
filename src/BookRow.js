@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { observer } from "mobx-react";
 
 function BookRow(props) {
   const book = props.book;
@@ -35,4 +36,4 @@ function BookRow(props) {
   );
 }
 
-export default BookRow;
+export default observer(BookRow);
